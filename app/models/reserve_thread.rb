@@ -1,0 +1,2 @@
+class ReserveThread < ApplicationRecord
+end
