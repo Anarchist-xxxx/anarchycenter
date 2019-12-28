@@ -15,7 +15,7 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                : https://github.com/rails/jbuilder
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -25,6 +25,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'itest5ch'
 # Use scheduler
 gem 'whenever', :require => false
+# Use Slim
+gem 'slim-rails', '3.1.3'
+# Switch erb to slim
+gem 'html2slim'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
