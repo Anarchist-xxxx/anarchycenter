@@ -6,6 +6,10 @@
       ul.menu-list
         li = link_to_function_page 'ホーム', root_path
       p.menu-label
+        = 'LiveAnarchy'
+      ul.menu-list
+        li = link_to_function_page 'スレ一覧', now_threads_path
+      p.menu-label
         = 'Culture'
       ul.menu-list
         li = link_to_function_page 'スレッド予約', '/a'

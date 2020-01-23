@@ -1,0 +1,43 @@
+.card
+  .card-content
+    h1.title = 'スレッド一覧'
+    table.table
+      colgroup
+        col style="width: 20%;"
+        col style="width: 40%;"
+        col style="width: 20%;"
+        col style="width: 20%;"
+      thead
+        tr
+          th = 'ID'
+          th = 'タイトル'
+          th = '作成日時'
+          th = '最終レス'
+          th = 'スレ落ち'
+      tbody
+        - @threads.each do |thread|
+          - comments = thread.comments
+          - first_comment = comments.first
+          - last_comment = comments.last
+          tr
+            td = thread.dat
+            td = link_to thread.name, url_to_thread(thread.dat)
+            td = l(first_comment.date)
+            td = l(last_comment.date)
+            td = l(cal_thread_down_time(last_comment.date))
+    .is-divider
+    h2.title = '924スレッド'
+    table.table
+      thead
+        tr
+          th = 'ID'
+          th = 'Title'
+      tbody
+        - @threads924.each do |thread|
+          tr
+            td = thread.dat
+            td = link_to thread.name, url_to_thread(thread.dat)
+
+
+
+

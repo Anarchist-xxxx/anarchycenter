@@ -81,8 +81,12 @@ GEM
     hpricot (0.8.6)
     html2slim (0.2.0)
       hpricot
+    htmlentities (4.3.4)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
+    itest5ch (2.0.0)
+      hpricot
+      htmlentities
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
     loofah (2.4.0)
@@ -137,6 +141,7 @@ GEM
       thor (>= 0.20.3, < 2.0)
     rake (13.0.1)
     regexp_parser (1.6.0)
+    rounding (1.0.1)
     rubyzip (2.0.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -203,9 +208,11 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   html2slim
+  itest5ch
   jbuilder (~> 2.7)
   puma (~> 4.1)
   rails (~> 6.0.2.rc1)
+  rounding
   sass-rails (>= 6)
   selenium-webdriver
   slim-rails (= 3.1.3)
