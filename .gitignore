@@ -35,4 +35,9 @@
 yarn-debug.log*
 .yarn-integrity
 
+# idea settings
 /.idea
+
+# env files
+.env
+.env.local
