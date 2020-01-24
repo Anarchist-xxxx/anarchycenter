@@ -1,0 +1,3 @@
+module BbsHelper
+
+end

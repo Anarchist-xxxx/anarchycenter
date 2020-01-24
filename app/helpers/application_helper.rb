@@ -15,4 +15,8 @@ module ApplicationHelper
     time.since(3.minutes).ceil_to(1.minutes)
   end
 
+  def getThreadAndComment
+    Itest5ch::Board.find('liveanarchy').threads.reject { |thread| thread.dat.to_s.start_with?('924') }
+  end
+
 end
