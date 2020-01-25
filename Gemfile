@@ -44,8 +44,10 @@ gem 'dotenv-rails'
 # Use MySQL
 gem 'mysql2'
 
-# Use Whenever
-gem 'whenever', :require => false
+# Use Sidekiq
+gem 'sidekiq'
+gem 'sidekiq-scheduler'
+gem 'sinatra', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
