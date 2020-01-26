@@ -3,6 +3,9 @@
 # Table name: threads
 #
 #  id               :bigint           not null, primary key
+#  dat              :string(255)
+#  subdomain        :string(255)
+#  board            :string(255)
 #  subject          :text(65535)
 #  first_comment_id :bigint
 #  last_comment_id  :bigint

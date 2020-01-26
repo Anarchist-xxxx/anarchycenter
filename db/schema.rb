@@ -10,23 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_24_223032) do
-
-  create_table "bbs_comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "bbs_threads", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+ActiveRecord::Schema.define(version: 2020_01_24_152547) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "number"
-    t.text "mail"
     t.text "name"
+    t.text "mail"
     t.datetime "date"
+    t.string "cid"
     t.text "comment", size: :long
     t.bigint "thread_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -35,6 +26,9 @@ ActiveRecord::Schema.define(version: 2020_01_24_223032) do
   end
 
   create_table "threads", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "dat"
+    t.string "subdomain"
+    t.string "board"
     t.text "subject"
     t.bigint "first_comment_id"
     t.bigint "last_comment_id"

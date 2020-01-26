@@ -4,9 +4,10 @@
 #
 #  id         :bigint           not null, primary key
 #  number     :integer
-#  mail       :text(65535)
 #  name       :text(65535)
+#  mail       :text(65535)
 #  date       :datetime
+#  cid        :string(255)
 #  comment    :text(4294967295)
 #  thread_id  :bigint           not null
 #  created_at :datetime         not null
