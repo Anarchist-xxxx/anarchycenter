@@ -1,4 +1,4 @@
 :schedule:
   crawler:
-    every: 30s
+    every: ['30s', first_in: '30s']
     class: Crawler

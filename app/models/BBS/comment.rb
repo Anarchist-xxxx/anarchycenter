@@ -19,5 +19,5 @@
 #
 
 class BBS::Comment < ApplicationRecord
-  belongs_to :thread
+  belongs_to :thread, class_name:'BBS::Thread'
 end

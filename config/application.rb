@@ -12,7 +12,7 @@ module Anarchycenter
     config.load_defaults 6.0
     config.generators.template_engine = :slim
 
-    config.i18n.default_locale = :ja
+    config.i18n.default_locale = :en
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

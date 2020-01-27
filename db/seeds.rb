@@ -1,3 +1,5 @@
+puts 'Seeding...'
+
 ActiveRecord::Base.transaction do
   thread = BBS::Thread.create!(subdomain: 'agree', board: 'liveanarchy', dat: '1579941515', subject: '早朝アナーキー')
 
@@ -50,6 +52,7 @@ ActiveRecord::Base.transaction do
                        comment: 'よく起きてんな',
                        thread: thread,
                        cid: '')
-  thread.update!(first_comment_id: comment1.id, last_comment_id: comment7.id)
-
+    thread.update!(first_comment_id: comment1.id, last_comment_id: comment7.id)
 end
+
+puts 'Seed Done!'
