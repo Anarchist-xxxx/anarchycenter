@@ -4,7 +4,10 @@ Rails.application.routes.draw do
 
   resources :home, only: :index
   resources :now_threads, only: :index
+  resources :reserve_threads, only: :index
+  resources :regular_threads, only: :index
 
+  # Sidekiq root
   require 'sidekiq/web'
   require 'sidekiq-scheduler/web'
 
